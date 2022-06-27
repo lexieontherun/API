@@ -9,77 +9,153 @@
 <script src=""></script>
 <body>
 
-<h1>How to Create a POST API request in Postman</h1>
+<div>
+<h1>How to Create a POST API Request in Postman</h1>
 
 <h2>Introduction</h2>
 <p>This article describes the process of creating a POST API request in Postman by using an example of creating a book order.</p>
-<p>Contributed by Alexandra Pindrochova</p>
+<p><i>Contributed by Alexandra Pindrochova</i></p>
 
 <h2>Prerequisites</h2>
 <p>Before you start, ensure that you have the following:</p>
 <ul>
 <li>Active Postman account</li>
-<li>API documentation specific to your URL</li>
+<li><a id="APIdoc"></a>API documentation specific to your URL (For the purpose of this article, refer to <a href="https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md">Simple Books API documentation</a>.)</li>
 </ul>
 
 <h2>Creating a POST API request in Postman</h2>
-<p>Step 1:</p>
-<p>Go to Postman and log in to your Postman account by clicking the Sign In button.</p>
-<p>Step result: The system displays the Sign In page.</p>
-<img src="/resources/Postman-main.png" alt="Creating a POST API request in Postman - Go to Postman"/>
+<p><b>Step 1:</b></p>
+<p>Go to <a href="https://www.postman.com/">Postman</a> and log in to your Postman account by clicking the <b>Sign In</b> button.</p>
+<p><b>Step result:</b> The system displays the <b>Sign In</b> page.</p>
+<img src="./resources/Postman-main.png" alt="Creating a POST API request in Postman - Go to Postman" style="width:1000px;height:500px;"/>
 
-<p>Step 2:</p>
-<p>On the Sign In page, enter your email or username and password in the respective fields, and then click Sign in.</p>
-<p>Step result: The system displays the Home page.</p>
-<img src="/resources/Postman-sign-in.png" alt="Creating a POST API request in Postman - Sign In"/>
+<p><b>Step 2:</b></p>
+<p>On the <b>Sign In</b> page, enter your email or username and password in the respective fields, and then click <b>Sign In</b>.</p>
+<p><b>Step result:</b> The system displays the <b>Home</b> page.</p>
+<img src="./resources/Postman-sign-in.png" alt="Creating a POST API request in Postman - Sign In" style="width:1000px;height:500px;"/>
 
-<p>Step 3:</p>
-<p>On the Home page, from the Workspaces drop-down list in the header, select My Workspace.</p>
-<p>Step result: The system displays My Workspace.</p>
-<img src="/resources/Postman-home.png" alt="Creating a POST API request in Postman - Select My Workspace"/>
+<p><b>Step 3:</b></p>
+<p>On the <b>Home</b> page, from the <b>Workspaces</b> drop-down list in the header, select <b>My Workspace</b>.</p>
+<p><b>Step result:</b> The system displays <b>My Workspace</b>.</p>
+<img src="./resources/Postman-home.png" alt="Creating a POST API request in Postman - Select My Workspace" style="width:1000px;height:500px;"/>
 
-<p>Step 4:</p>
-<p>On My Workspace page, create a new API request by clicking the plus icon in the main work area.</p>
-<p>Step result: The system displays a new API request.</p>
-<img src="resources/Postman-new-request.png" alt="Creating a POST API request in Postman - Create an API request"/>
+<p><b>Step 4:</b></p>
+<p>On the <b>My Workspace</b> page, create a new API request by clicking the <b>plus</b> icon in the main work area.</p>
+<p><b>Step result:</b> The system displays a new API request.</p>
+<img src="./resources/Postman-new-request.png" alt="Creating a POST API request in Postman - Create an API request" style="width:1000px;height:500px;"/>
 
-<p>Step 5:</p>
-<p>Enter the request URL into the API request bar and add <code>/orders</code> endpoint. 
-    For the purpose of this article https://simple-books-api.glitch.me/orders is used as an example. 
-    From the http request methods drop-down list, select POST. 
-    Save your request to a collection by clicking the drop-down list next to the Save button, and then select Save as.</p>
+<p><b>Step 5:</b></p>
+<p>Enter the request URL into the API request bar and add the <code>/orders</code> endpoint. 
+    For the purpose of this article <code>https://simple-books-api.glitch.me/orders</code> is used as an example.<br> 
+    From the http request methods drop-down list, select <b>POST</b>. 
+    Save your request to a collection by clicking the drop-down list next to the <b>Save</b> button, and then select <b>Save as</b>.</p>
 
-<p>Step result: The system displays the Save Request dialog box.</p>
-<img src="resources/Postman-save-request.png" alt="Creating a POST API request in Postman - Create an API request"/>
+<p><b>Step result:</b> The system displays the <b>Save Request</b> dialog box.</p>
+<img src="./resources/Postman-save-request.png" alt="Creating a POST API request in Postman - Save an API request" style="width:1000px;height:500px;"/>
 
-<p>Step 6:</p>
-<p>In the Save Request dialog box, enter the value for the Request name field, and then from the Save to list, 
-    select either an existing collection or create a new collection. Click Save.</p>ś
-<img src="resources/Postman-save-to-collection.png" alt="Creating a POST API request in Postman - Create an API request"/>
+<p><b><a id="Step6"></a>Step 6:</b></p>
+<p>In the <b>Save Request</b> dialog box, enter the value for the <b>Request name</b> field, and then from the <b>Save to</b> list, 
+    select either an existing collection or create a new collection. Click <b>Save</b>.</p>
+<img src="./resources/Postman-save-to-collection.png" alt="Creating a POST API request in Postman - Create an API request" style="width:1000px;height:500px;"/>
 
-<p>Step 7:</p>
+<p><b>Step 7:</b></p>
 <p>To submit an order, you need to register your API client by obtaining an access token. 
-    To obtain an access token, refer to How to Obtain an Access Token in Postman.</p>
+    To obtain an access token, refer to <i>How to Obtain an Access Token in Postman</i>.</p>
 
-<p>Step 8:</p>
-<p>In the API request, click the Authorization tab, and then from the Type drop-down list, select Bearer Token. 
-    In the Token field, enter the variable that you set for your collection in Step 6. 
-    For the purpose of the example used in this article, enter the {{accessToken}} variable. Click Save.</p>
-<img src="resources/Postman-authorization.png" alt="Creating a POST API request in Postman - Add authorization"/>
+<p><b><a id="Step8"></a>Step 8:</b></p>
+<p>In the API request, click the <b>Authorization</b> tab, and then from the <b>Type</b> drop-down list, select <b>Bearer Token</b>. 
+    In the <b>Token</b> field, enter the variable that you set for your collection in <a href="Step6">Step 6</a>.<br> 
+    For the purpose of the example used in this article, enter the <code>{{accessToken}}</code> variable. Click <b>Save</b>.</p>
+<img src="./resources/Postman-authorization.png" alt="Creating a POST API request in Postman - Add authorization" style="width:1000px;height:500px;"/>
 
-<p>Step 9:</p>
-<p>In the request, click Body, select the raw radio button, and then from the drop-down list, select JSON. 
-    In the body, enter the code in JSON format to specify the object that you want to order. </p>
-<p>For the example used in this article, enter the following code:
-    <code>
-    {
-    "bookId": 1,
-    "customerName": "John"
+<p><b>Step 9:</b></p>
+<p>In the request, click <b>Body</b>, select the <b>raw</b> radio button, and then from the drop-down list, select <b>JSON</b>. 
+    In the <b>body</b>, enter the code in JSON format to specify the object that you want to order.</p>
+<p>Refer to Simple Books API documentation from the <a href="APIdoc">Prerequisites</a> section, and then enter the following code:
+    <code><br>
+    {<br>
+    "bookId": 1,<br>
+    "customerName": "John"<br>
     }
   </code></p>
-<p>Click Save, and then Send to submit your order.</p>
-<p>Step result: The system displays the book that you ordered in the API response body.</p>
-<img src="resources/Postman-body.png" alt="Creating a POST API request in Postman - Submit the order"/>
+<p>Click <b>Save</b>, and then <b>Send</b> to submit your order.</p>
+<p><b>Step result:</b> The system displays the book that you ordered in the API response body.</p>
+<img src="./resources/Postman-body.png" alt="Creating a POST API request in Postman - Submit the order" style="width:1000px;height:500px;"/>
+</div>
+
+<p style="page-break-after: always;">&nbsp;</p>
+
+<div>
+    <h1>How to Obtain an Access Token in Postman</h1>
+
+    <h2>Introduction</h2>
+    <p>This article describes the process of obtaining an access token in Postman.</p>
+    <p><i>Contributed by Alexandra Pindrochova</i></p>
+    
+    <h2>Prerequisites</h2>
+    <p>Before you start, ensure that you have the following:</p>
+    <ul>
+    <li>Active Postman account</li>
+    <li>POST API request created in Postman (To create a POST API request in Postman, refer to <i>How to Create a POST API request in Postman</i>.</li>
+    li><a id="APIdoc2"></a>API documentation specific to your URL (For the purpose of this article, refer to <a href="https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md">Simple Books API documentation</a>.)</li>
+    
+    <h2>Obtaining an Access Token in Postman</h2>
+    <p><b>Step 1:</b></p>
+    <p>Go to <a href="https://www.postman.com/">Postman</a> and log in to your Postman account by clicking the <b>Sign In</b> button.</p>
+    <p><b>Step result:</b> The system displays the <b>Sign In</b> page.</p>
+    <img src="./resources/Postman-main.png" alt="Creating a POST API request in Postman - Go to Postman" style="width:1000px;height:500px;"/>
+    
+    <p><b>Step 2:</b></p>
+    <p>On the <b>Sign In</b> page, enter your email or username and password in the respective fields, and then click <b>Sign In</b>.</p>
+    <p><b>Step result:</b> The system displays the <b>Home</b> page.</p>
+    <img src="./resources/Postman-sign-in.png" alt="Obtaining an Access Token in Postman - Sign In" style="width:1000px;height:500px;"/>
+    
+    <p><b>Step 3:</b></p>
+    <p>On the <b>Home</b> page, from the <b>Workspaces</b> drop-down list in the header, select <b>My Workspace</b>.</p>
+    <p><b>Step result:</b> The system displays <b>My Workspace</b>.</p>
+    <img src="./resources/Postman-home.png" alt="Obtaining an Access Token in Postman - Select My Workspace" style="width:1000px;height:500px;"/>
+    
+    <p><b>Step 4:</b></p>
+    <p>From <b>Collections</b>, identify your collection, and then click <b>View more actions</b> next to the API request that you need to authenticate.
+        From the drop-down list, select <b>Duplicate</b>.</p>
+    <p><b>Step result:</b> The system displays a new API request.</p>
+    <img src="./resources/Postman-duplicate.png" alt="Obtaining an Access Token in Postman - Duplicate" style="width:1000px;height:500px;"/>
+    
+    <p><b>Step 5:</b></p>
+    <p>In the new API request, enter the request URL into the API request bar and add <code>/api-clients</code> endpoint. 
+        For the purpose of this article <code>https://simple-books-api.glitch.me/api-clients</code> is used as an example. Hover over the API request name and
+        rename the request by clicking the <b>pencil</b> icon. In this example, the request is renamed to <b>Register API client</b>.
+        From the http request methods drop-down list, select <b>POST</b>. Click <b>Body</b>, select the <b>raw</b> radio button, 
+        and then from the drop-down list, select <b>JSON</b>. 
+        In the body, enter the code from an available documentation in JSON format.
+        <p>Refer to Simple Books API documentation from the <a href="APIdoc2">Prerequisites</a> section, and then enter the following code:
+            <code><br>
+                {<br>
+                    "clientName": "Postman",<br>
+                    "clientEmail": "valentin@example.com"<br>
+                 }<br>
+          </code></p>
+        Click <b>Send</b>.</p>
+    <img src="./resources/Postman-register-api-client.png" alt="Obtaining an Access Token in Postman - Obtain the access token" style="width:1000px;height:500px;"/>
+    <p><b>Step result:</b> The system displays your access token in the API response body.</p>
+    <img src="./resources/Postman-access-token-response.png" alt="Obtaining an Access Token in Postman - Obtain the access token" style="width:1000px;height:500px;"/>
+    
+    <p><b><a id="Step6"></a>Step 6:</b></p>
+    <p>Copy the access token from the API response body. Click <b>View more actions</b> next to your collection, and then select <b>Edit</b> from the drop-down list.</p>
+    <p><b>Step result:</b> The system displays actions available for your collection.</p>
+    <img src="./resources/Postman-edit-collection.png" alt="Obtaining an Access Token in Postman - View more actions" style="width:1000px;height:500px;"/>
+    
+    <p><b>Step 7:</b></p>
+    <p>Click the <b>Variables</b> tab, and then add a new variable. For the purpose of this article <code>accessToken</code> is used as an example. 
+        In the <b>Initial Value</b> column, enter the value that you want to share with your team when you share the variable in a collection, environment or globals. 
+        You should not enter the actual value of your access token here as it is public. In the <b>Current Value</b> column, 
+        enter the value of your access token which is private to you. Click <b>Save</b>.</p>
+    <img src="./resources/Postman-variable.png" alt="Obtaining an Access Token in Postman - View more actions" style="width:1000px;height:500px;"/>
+    
+    <h2>Next Steps</h2>
+    <p>Continue with <a href="Step8">Step 8</a> in <i>How to Create a POST API Request in Postman</i>.</p>
+
+</div>
 
 </body>
 </html>
