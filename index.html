@@ -20,12 +20,12 @@
 <p>Before you start, ensure that you have the following:</p>
 <ul>
 <li>Active Postman account</li>
-<li><a id="APIdoc"></a>API documentation specific to your URL (For the purpose of this article, refer to <a href="https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md">Simple Books API documentation</a>.)</li>
+<li><a id="APIdoc" target="_blank"></a>API documentation specific to your URL (For the purpose of this article, refer to <a href="https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md" target="_blank" rel="nofollow noopener noreferrer">Simple Books API documentation</a>.)</li>
 </ul>
 
 <h2>Creating a POST API request in Postman</h2>
 <p><b>Step 1:</b></p>
-<p>Go to <a href="https://www.postman.com/">Postman</a> and log in to your Postman account by clicking the <b>Sign In</b> button.</p>
+<p>Go to <a href="https://www.postman.com/" target="_blank" rel="nofollow noopener noreferrer">Postman</a> and log in to your Postman account by clicking the <b>Sign In</b> button.</p>
 <p><b>Step result:</b> The system displays the <b>Sign In</b> page.</p>
 <img src="./resources/Postman-main.png" alt="Creating a POST API request in Postman - Go to Postman" style="width:1000px;height:500px;"/>
 
@@ -53,7 +53,7 @@
 <p><b>Step result:</b> The system displays the <b>Save Request</b> dialog box.</p>
 <img src="./resources/Postman-save-request.png" alt="Creating a POST API request in Postman - Save an API request" style="width:1000px;height:500px;"/>
 
-<p><b><a id="Step6"></a>Step 6:</b></p>
+<p><b><a id="Step6" target="_blank"></a>Step 6:</b></p>
 <p>In the <b>Save Request</b> dialog box, enter the value for the <b>Request name</b> field, and then from the <b>Save to</b> list, 
     select either an existing collection or create a new collection. Click <b>Save</b>.</p>
 <img src="./resources/Postman-save-to-collection.png" alt="Creating a POST API request in Postman - Create an API request" style="width:1000px;height:500px;"/>
@@ -62,16 +62,16 @@
 <p>To submit an order, you need to register your API client by obtaining an access token. 
     To obtain an access token, refer to <i>How to Obtain an Access Token in Postman</i>.</p>
 
-<p><b><a id="Step8"></a>Step 8:</b></p>
+<p><b><a id="Step8" target="_blank"></a>Step 8:</b></p>
 <p>In the API request, click the <b>Authorization</b> tab, and then from the <b>Type</b> drop-down list, select <b>Bearer Token</b>. 
-    In the <b>Token</b> field, enter the variable that you set for your collection in <a href="Step6">Step 6</a>.<br> 
+    In the <b>Token</b> field, enter the variable that you set for your collection in <a class="self_link" href="Step6" target="_self">Step 6</a>.<br> 
     For the purpose of the example used in this article, enter the <code>{{accessToken}}</code> variable. Click <b>Save</b>.</p>
 <img src="./resources/Postman-authorization.png" alt="Creating a POST API request in Postman - Add authorization" style="width:1000px;height:500px;"/>
 
 <p><b>Step 9:</b></p>
 <p>In the request, click <b>Body</b>, select the <b>raw</b> radio button, and then from the drop-down list, select <b>JSON</b>. 
     In the <b>body</b>, enter the code in JSON format to specify the object that you want to order.</p>
-<p>Refer to Simple Books API documentation from the <a href="APIdoc">Prerequisites</a> section, and then enter the following code:
+<p>Refer to Simple Books API documentation from the <a class="self_link" href="APIdoc" target="_self">Prerequisites</a> section, and then enter the following code:
     <code><br>
     {<br>
     "bookId": 1,<br>
@@ -97,12 +97,12 @@
     <ul>
     <li>Active Postman account</li>
     <li>POST API request created in Postman (To create a POST API request in Postman, refer to <i>How to Create a POST API request in Postman</i>.</li>
-    li><a id="APIdoc2"></a>API documentation specific to your URL (For the purpose of this article, refer to <a href="https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md">Simple Books API documentation</a>.)</li>
+    li><a id="APIdoc2" target="_blank"></a>API documentation specific to your URL (For the purpose of this article, refer to <a href="https://github.com/vdespa/introduction-to-postman-course/blob/main/simple-books-api.md" target="_blank" rel="nofollow noopener noreferrer">Simple Books API documentation</a>.)</li>
     </ul>
 
     <h2>Obtaining an Access Token in Postman</h2>
     <p><b>Step 1:</b></p>
-    <p>Go to <a href="https://www.postman.com/">Postman</a> and log in to your Postman account by clicking the <b>Sign In</b> button.</p>
+    <p>Go to <a href="https://www.postman.com/" target="_blank" rel="nofollow noopener noreferrer">Postman</a> and log in to your Postman account by clicking the <b>Sign In</b> button.</p>
     <p><b>Step result:</b> The system displays the <b>Sign In</b> page.</p>
     <img src="./resources/Postman-main.png" alt="Creating a POST API request in Postman - Go to Postman" style="width:1000px;height:500px;"/>
     
@@ -129,7 +129,7 @@
         From the http request methods drop-down list, select <b>POST</b>. Click <b>Body</b>, select the <b>raw</b> radio button, 
         and then from the drop-down list, select <b>JSON</b>. 
         In the body, enter the code from an available documentation in JSON format.
-        <p>Refer to Simple Books API documentation from the <a href="APIdoc2">Prerequisites</a> section, and then enter the following code:
+        <p>Refer to Simple Books API documentation from the <a class="self_link" href="APIdoc2" target="_self">Prerequisites</a> section, and then enter the following code:
             <code><br>
                 {<br>
                     "clientName": "Postman",<br>
@@ -154,7 +154,7 @@
     <img src="./resources/Postman-variable.png" alt="Obtaining an Access Token in Postman - View more actions" style="width:1000px;height:500px;"/>
     
     <h2>Next Steps</h2>
-    <p>Continue with <a href="Step8">Step 8</a> in <i>How to Create a POST API Request in Postman</i>.</p>
+    <p>Continue with <a class="self_link" href="Step8" target="_self">Step 8</a> in <i>How to Create a POST API Request in Postman</i>.</p>
 
 </div>
 
@@ -164,9 +164,8 @@
     <h2>How to Transfer a Product Instance (SLR)</h2>
     <h2>Introduction</h2>
     <p>This article describes the process of transferring a product instance as part of specific license reservation (SLR) in Cisco Smart Software Manager (CSSM).</p>
-    <p>&nbsp;</p>
+    
     <h2>Prerequisites</h2>
-    <p>&nbsp;</p>
     <h3>Requirements</h3>
     <p>Before you start, ensure that you have the following:</p>
     <ul>
@@ -174,7 +173,7 @@
     <li>Smart account administrator, or Virtual account administrator role to access both the source and destination Virtual accounts between which you are transferring the product instance&nbsp;<span>(To request access to a Smart account or Virtual account, refer to&nbsp;</span><a href="https://www.cisco.com/c/en/us/support/docs/licensing/common-licensing-issues/how-to/lic217273-how-to-request-access-to-a-smart-account.html?dtid=osscdc000283" target="_blank" rel="nofollow noopener noreferrer">How to Request Access to an Existing Smart Account</a><span>.)</span></li>
     <li>Existing license reservation (To reserve licenses in CSSM, refer to&nbsp;<a href="https://www.cisco.com/c/en/us/support/docs/licensing/common-licensing-issues/how-to/lic217543-how-to-reserve-licenses-slr.html?dtid=osscdc000283" target="_blank" rel="noopener">How to Reserve Licenses (SLR)</a>.)</li>
     </ul>
-    <p>&nbsp;</p>
+    
     <h2><span>Transferring a Product Instance (SLR)</span></h2>
     <p><b>Step 1</b>:</p>
     <p><span>Go to&nbsp;</span><a class="self_link" href="https://software.cisco.com" target="_blank" rel="nofollow noopener noreferrer noreferrer">Cisco Software Central</a><span>&nbsp;and log in with your Cisco.com account.</span></p>
@@ -199,11 +198,10 @@
         then the system displays the <b>License Shortage</b> warning message that prompts you to transfer the licenses listed in the dialog box from your source Virtual account so that you remain in compliance. 
         You can either <b>Continue</b> or <b>Cancel</b> the transfer at this point in time. When you press <b>Continue</b>, the system successfully transfers the product instance to the destination Virtual account, however you still need to <a href="https://www.cisco.com/c/en/us/support/docs/licensing/common-licensing-issues/how-to/lic217548-how-to-transfer-licenses-between-virtual.html?dtid=osscdc000283" target="_blank" rel="noopener">transfer the license that the system displayed in the dialog box</a>.</p>
     <p><image src="./resources/CSSM-transfer-product-instance.png" alt="Transferring a Product Instance - Transfer the product instance" width="1000" height="500" ></image></p>
-    <p>&nbsp;</p>
+    <p>&nbsp;</p>  
     <h2>Verify</h2>
-    <p>&nbsp;</p>
     <p><span>You can confirm that you successfully transferred your product instance by using one of the following options:</span></p>
-    <p>&nbsp;</p>
+    
     <h3>Option 1</h3>
     <p><b>Verification Step:</b>
         <p>On the <b>Inventory</b> tab, select your destination Virtual account, click <b>Licenses</b>, 
