@@ -157,5 +157,73 @@
 
 </div>
 
+<p style="page-break-after: always;">&nbsp;</p>
+
+<div>
+    <h2>How to Transfer a Product Instance (SLR)</h2>
+    <h2>Introduction</h2>
+    <p>This article describes the process of transferring a product instance as part of specific license reservation (SLR) in Cisco Smart Software Manager (CSSM).</p>
+    <p>&nbsp;</p>
+    <h2>Prerequisites</h2>
+    <p>&nbsp;</p>
+    <h3>Requirements</h3>
+    <p>Before you start, ensure that you have the following:</p>
+    <ul>
+    <li><a href="https://www.cisco.com/c/en/us/about/help/registration-benefits-help.html" target="_blank" rel="nofollow noopener noreferrer">Active Cisco.com account</a></li>
+    <li>Smart account administrator, or Virtual account administrator role to access both the source and destination Virtual accounts between which you are transferring the product instance&nbsp;<span>(To request access to a Smart account or Virtual account, refer to&nbsp;</span><a href="https://www.cisco.com/c/en/us/support/docs/licensing/common-licensing-issues/how-to/lic217273-how-to-request-access-to-a-smart-account.html?dtid=osscdc000283" target="_blank" rel="nofollow noopener noreferrer">How to Request Access to an Existing Smart Account</a><span>.)</span></li>
+    <li>Existing license reservation (To reserve licenses in CSSM, refer to&nbsp;<a href="https://www.cisco.com/c/en/us/support/docs/licensing/common-licensing-issues/how-to/lic217543-how-to-reserve-licenses-slr.html?dtid=osscdc000283" target="_blank" rel="noopener">How to Reserve Licenses (SLR)</a>.)</li>
+    </ul>
+    <p>&nbsp;</p>
+    <h2><span>Transferring a Product Instance (SLR)</span></h2>
+    <p><b>Step 1</b>:</p>
+    <p><span>Go to&nbsp;</span><a class="self_link" href="https://software.cisco.com" target="_blank" rel="nofollow noopener noreferrer noreferrer">Cisco Software Central</a><span>&nbsp;and log in with your Cisco.com account.</span></p>
+    <p><image src="./resources/CSC-main.png" width="1000" height="500" alt="Transferring a Product Instance - Log in"></image></p>
+    <p><b>Step 2</b>:</p>
+    <p><span>In the</span>&nbsp;<b>Smart Software Manager</b>section, click<b>Manage licenses</b>.</p>
+    <p><image src="./resources/CSC-CSSM.png" width="1000" height="500" alt="Transferring a Product Instance - Manage licenses"></image></p>
+    <p><b>Step 3</b>:</p>
+    <p>On the <b>Inventory</b> tab, select the source Virtual account from which you want to transfer your product instance, 
+        click <b>Product Instances</b>, and then in the search bar enter the <b>Device</b> or <b>Product Type</b> to filter your product instance.</p>
+    <p><b>Step result</b>: The system displays your product instance.</p>
+    <p><image src="./resources/CSSM-product-instances.png" width="1000" height="500" alt="Transferring a Product Instance - Identify product instance"></image></p>
+    <p><b>Step 4</b>:</p>
+    <p>In the <b>Actions</b> column, click the <b>Actions</b> drop-down, and then select <b>Transfer</b>.</p>
+    <p><b>Step result</b>: The system displays the <b>Transfer Product Instance</b> dialog box.</p>
+    <p><image src="./resources/CSSM-actions-transfer.png" width="1000" height="500" alt="Transferring a Product Instance - Select an action"></image></p>
+    <p><b>Step 5</b>:</p>
+    <p>In the <b>Transfer Product Instance</b> dialog box, select the Virtual account to which you want to transfer your product instance along with your reserved entitlements. Click <b>Transfer</b>.</p>
+    <p><b>Step result</b>: The system displays a notification message that confirms that you successfully transferred the product instance.</p>
+    <p style="background-image: url('http://www.cisco.com/en/US/i/templates/caut.gif'); background-repeat: no-repeat; background-position: 2px 4px; height: auto; width: auto; padding: 10px 5px 10px 35px; margin-top: 10px; margin-bottom: 10px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; overflow-x: hidden;"><b>Caution</b>: 
+        If the destination Virtual account does not have sufficient licenses to cover the usage required by the product instance that you are transferring, 
+        then the system displays the <b>License Shortage</b> warning message that prompts you to transfer the licenses listed in the dialog box from your source Virtual account so that you remain in compliance. 
+        You can either <b>Continue</b> or <b>Cancel</b> the transfer at this point in time. When you press <b>Continue</b>, the system successfully transfers the product instance to the destination Virtual account, 
+        however you still need to <a href="https://www.cisco.com/c/en/us/support/docs/licensing/common-licensing-issues/how-to/lic217548-how-to-transfer-licenses-between-virtual.html?dtid=osscdc000283" target="_blank" rel="noopener">
+        transfer the license that the system displayed in the dialog box</a>.</p>
+    <p><image src="./resources/CSSM-transfer-product-instance.png" alt="Transferring a Product Instance - Transfer the product instance" width="1000" height="500" ></image></p>
+    <p>&nbsp;</p>
+    <h2>Verify</h2>
+    <p>&nbsp;</p>
+    <p><span>You can confirm that you successfully transferred your product instance by using one of the following options:</span></p>
+    <p>&nbsp;</p>
+    <h3>Option 1</h3>
+    <p><b>Verification Step:</b>
+        <p>On the <b>Inventory</b> tab, select your destination Virtual account, click <b>Licenses</b>, 
+        and verify that the system displays the licenses that you transferred along with your product instance from your source Virtual account.</p>
+    <p><image src="./resources/CSSM-licenses.png" width="1000" height="500" alt="Transferring a Product Instance - Verify the transfer"></image></p>
+    <p>&nbsp;</p>
+    <h3>Option 2</h3>
+    <p><b>Verification Step:</b> 
+        <p>On the <b>Inventory</b> tab, select your destination Virtual account, 
+        click <b>Product Instances</b>, search by device or product type, and then press <b>Enter</b>.</p>
+    <p><b>Step result:</b> The system displays the product instance that you transferred from the source Virtual account.</p>
+    <p><image src="./resources/CSSM-product-instances-verify.png" width="1000" height="500" alt="Transferring a Product Instance - Verify the transfer"></image></p>
+    <p>&nbsp;</p>
+    <h2>Troubleshooting</h2>
+    <p>If you experience an issue during the process of transferring your product instance, 
+        open a case in <a href="https://mycase.cloudapps.cisco.com/case" target="_blank" rel="nofollow noopener noreferrer">Support Case Manager (SCM)</a>.</p>
+    <p>&nbsp;</p>
+    
+</div>
+
 </body>
 </html>
